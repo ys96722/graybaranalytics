@@ -1,16 +1,14 @@
-import styled, { css, keyframes } from "styled-components";
+import styled, { css, keyframes } from "styled-components"
 
 const slideIn = keyframes`
   0% {
     opacity: 0;
-    transform: translateX(-20%);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0);
   }
-`;
+`
 
 const fadeInAni = keyframes`
   0% {
@@ -32,10 +30,10 @@ export const Div = styled.div`
     `}
 
     ${({ fadeIn }) =>
-    fadeIn &&
-    css`
-      animation: 1s ease-in-out 0s 1 ${fadeInAni};
-    `}
+      fadeIn &&
+      css`
+        animation: 1s ease-in-out 0s 1 ${fadeInAni};
+      `}
 
   ${({ position }) =>
     position &&
@@ -78,7 +76,7 @@ export const Div = styled.div`
         css`
           text-align: ${textAlign};
         `}
-`;
+`
 
 export const Flex = styled(Div)`
   display: flex;
@@ -100,20 +98,20 @@ export const Flex = styled(Div)`
      css`
        align-items: ${align};
      `}
-`;
+`
 
-export const H1 = styled.h1``;
+export const H1 = styled.h1``
 
 export const H2 = styled.h2`
   font-size: 30px;
-`;
+`
 
 export const H4 = styled.h4`
   font-size: 15px;
-`;
+`
 
 export const ErrorMessage = styled.p`
   font-size: 12px;
   color: red;
   text-align: left;
-`;
+`
