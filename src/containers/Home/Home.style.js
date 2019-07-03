@@ -158,7 +158,7 @@ export const LastLogin = styled.p`
 export const ReportFrame = styled.iframe`
   /* width: 800px; */
   width: 100%;
-  height: 92%;
+  height: 100%;
   align-self: flex-end;
   border: 0;
   overflow: visible;
@@ -171,5 +171,6 @@ export const ReportContainer = styled(Flex)`
   overflow: hidden;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 1);
   width: 100%;
-  height: 100%;
+  height: 90%;
+  margin-top: auto;
 `
