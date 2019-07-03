@@ -19,8 +19,8 @@ export const NavBarContainer = styled(Flex)`
   /* Logo */
   img {
     margin-right: auto;
-    width: 160px;
-    height: 75px;
+    width: 180px;
+    height: 70px;
     cursor: pointer;
 
     transition: all 0.2s;
