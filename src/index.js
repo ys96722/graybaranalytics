@@ -1,11 +1,15 @@
+import "babel-polyfill"
+import "react-app-polyfill/ie11"
+// import "core-js/stable"
+// import "babel/polyfill"
 import React from "react"
 import ReactDOM from "react-dom"
 import App from "./containers/App/App"
 import * as serviceWorker from "./serviceWorker"
-import "./polyfill"
-import "babel-polyfill"
-import "core-js/es/map"
-import "core-js/es/set"
+// import "babel-polyfill/dist/polyfill"
+
+// Polyfills
+// import "./polyfill"
 
 ReactDOM.render(<App />, document.getElementById("root"))
 

@@ -10,6 +10,18 @@ import { FirebaseContext } from "../../firebase"
 
 function NavBar(props) {
   const { firebase } = React.useContext(FirebaseContext)
+  const [isHovered, setHovered] = React.useState(false)
+
+  function handleHover() {
+    setHovered(true)
+    console.log(isHovered)
+  }
+
+  function handleExit() {
+    setHovered(false)
+    console.log(isHovered)
+  }
+
   return (
     <NavBarContainer>
       <img
@@ -18,14 +30,14 @@ function NavBar(props) {
         onClick={() => props.fetchReport(0)}
       />
       <NavItemContainer>
-        <TriggerItem>
+        <TriggerItem onMouseOver={handleHover} onMouseLeave={handleExit}>
           Reports
-          <HoverList>
-            <NavItem onClick={() => props.fetchReport(1)}>Sales</NavItem>
-            <NavItem onClick={() => props.fetchReport(2)}>Investments</NavItem>
-            <NavItem onClick={() => props.fetchReport(3)}>Market</NavItem>
-          </HoverList>
         </TriggerItem>
+        <HoverList flag={isHovered}>
+          <NavItem onClick={() => props.fetchReport(1)}>Sales</NavItem>
+          <NavItem onClick={() => props.fetchReport(2)}>Investments</NavItem>
+          <NavItem onClick={() => props.fetchReport(3)}>Market</NavItem>
+        </HoverList>
         <NavItem onClick={() => firebase.logout()}>Logout</NavItem>
       </NavItemContainer>
     </NavBarContainer>
