@@ -119,14 +119,16 @@ function Home(props) {
       </ContentContainer> */}
     </LandingViewContainer>,
     <ReportContainer animation={true}>
+      {/* <ReportFrame src="https://datastudio.google.com/embed/reporting/1WpxpyPIkFwOmTznBvkbSVQNBqK1BFWgG/page/Ml5p" /> */}
+      <ReportFrame src="https://10az.online.tableau.com/t/graybarelectriccompanyinc/views/VendorDataPrototype-Sales/SalesExecutiveSummaryDashboard2?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no&:origin=viz_share_link" />
+    </ReportContainer>,
+    <ReportContainer animation={true}>
+      {/* <ReportFrame src="https://datastudio.google.com/embed/reporting/1-gbbNbHEaWTklQVy5BEEgmMSwRQfDAhf/page/LN4q" /> */}
       <ReportFrame src="https://10az.online.tableau.com/t/graybarelectriccompanyinc/views/VendorDataPrototype-Investment/InvestmentExecutiveSummaryDashboard2?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no&:origin=viz_share_link" />
-      {/* <Tableau /> */}
     </ReportContainer>,
     <ReportContainer animation={true}>
-      <ReportFrame src="https://datastudio.google.com/embed/reporting/1-gbbNbHEaWTklQVy5BEEgmMSwRQfDAhf/page/LN4q" />
-    </ReportContainer>,
-    <ReportContainer animation={true}>
-      <ReportFrame src="https://datastudio.google.com/embed/reporting/1QNkTmEmYxEa6fLgh9-kymhNhasUik6nZ/page/rN4q" />
+      {/* <ReportFrame src="https://datastudio.google.com/embed/reporting/1QNkTmEmYxEa6fLgh9-kymhNhasUik6nZ/page/rN4q" /> */}
+      <ReportFrame src="https://10az.online.tableau.com/t/graybarelectriccompanyinc/views/VendorDataPrototype-MarketShare_002/MarketShareExecutiveDashboard?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no&:origin=viz_share_link" />
     </ReportContainer>
   ]
 
