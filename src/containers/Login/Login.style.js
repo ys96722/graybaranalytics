@@ -13,8 +13,8 @@ export const LoginContainer = styled(Flex)`
     content: "";
     z-index: -1;
     position: inherit;
-    left: 0;
-    top: 0;
+    left: inherit;
+    top: inherit;
     width: 100vw;
     height: 100vh;
     background-image: inherit;

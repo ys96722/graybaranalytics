@@ -46,7 +46,6 @@ export const BannerMessageContainer = styled(Flex)`
 
 export const LandingViewContainer = styled(Flex)`
   flex-direction: column;
-  position: relative;
   /* height and margin-top pushes the container down */
   height: 90%;
   width: 100%;
@@ -56,10 +55,10 @@ export const LandingViewContainer = styled(Flex)`
     content: "";
     z-index: -1;
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    left: inherit;
+    top: inherit;
+    width: inherit;
+    height: inherit;
     background-image: url(${props => props.src});
     background-repeat: no-repeat;
     background-position: center;
@@ -69,10 +68,10 @@ export const LandingViewContainer = styled(Flex)`
     content: "";
     z-index: -1;
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    left: inherit;
+    top: inherit;
+    width: inherit;
+    height: inherit;
     background-color: rgba(0, 0, 0, 0.4);
   }
 `
