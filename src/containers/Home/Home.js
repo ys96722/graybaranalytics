@@ -16,6 +16,7 @@ import {
   ReportTitle
 } from "./Home.style"
 import NavBar from "../../component/NavBar/NavBar"
+import Tableau from "../../component/Tableau/Tableau"
 
 function Home(props) {
   const { user } = React.useContext(FirebaseContext)
@@ -118,7 +119,8 @@ function Home(props) {
       </ContentContainer> */}
     </LandingViewContainer>,
     <ReportContainer animation={true}>
-      <ReportFrame src="https://datastudio.google.com/embed/reporting/1WpxpyPIkFwOmTznBvkbSVQNBqK1BFWgG/page/Ml5p" />
+      <ReportFrame src="https://10az.online.tableau.com/t/graybarelectriccompanyinc/views/VendorDataPrototype-Investment/InvestmentExecutiveSummaryDashboard2?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no&:origin=viz_share_link" />
+      {/* <Tableau /> */}
     </ReportContainer>,
     <ReportContainer animation={true}>
       <ReportFrame src="https://datastudio.google.com/embed/reporting/1-gbbNbHEaWTklQVy5BEEgmMSwRQfDAhf/page/LN4q" />

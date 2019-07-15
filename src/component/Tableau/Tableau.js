@@ -8,7 +8,8 @@ class Tableau extends Component {
   }
 
   initViz() {
-    const vizUrl = "https://10az.online.tableau.com/javascripts/api/viz_v1.js"
+    const vizUrl =
+      "https://10az.online.tableau.com/t/graybarelectriccompanyinc/views/VendorDataPrototype-Investment/InvestmentExecutiveSummaryDashboard2?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no&:origin=viz_share_link"
     Axios.get(vizUrl).then(response => console.log(response))
     // const vizContainer = this.vizContainer
     // let viz = new window.tableau.Viz(vizContainer, vizUrl)
