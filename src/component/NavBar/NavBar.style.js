@@ -10,7 +10,7 @@ export const NavBarContainer = styled(Flex)`
   min-height: fit-content;
   top: 0;
   left: 0;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   background-color: ${midBlue};
   padding-left: 40px;
